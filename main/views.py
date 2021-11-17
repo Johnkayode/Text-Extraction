@@ -32,7 +32,7 @@ def index(request):
 
 		# Extracting text from image
         custom_config = r'-l eng --oem 3 --psm 6'
-        pytesseract.pytesseract.tesseract_cmd = '/app/.apt/usr/bin/tesseract'
+        # pytesseract.pytesseract.tesseract_cmd = '/app/.apt/usr/bin/tesseract'
         text = pytesseract.image_to_string(image,config=custom_config)
 
 		# Remove symbol if any
