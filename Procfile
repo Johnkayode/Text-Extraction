@@ -1,0 +1,1 @@
+web: gunicorn text_extraction.wsgi
